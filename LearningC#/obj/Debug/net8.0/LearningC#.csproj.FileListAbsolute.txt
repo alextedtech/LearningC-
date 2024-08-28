@@ -1,0 +1,14 @@
+/Users/alexandertorres/Coding/LearningC#/LearningC#/bin/Debug/net8.0/LearningC#
+/Users/alexandertorres/Coding/LearningC#/LearningC#/bin/Debug/net8.0/LearningC#.deps.json
+/Users/alexandertorres/Coding/LearningC#/LearningC#/bin/Debug/net8.0/LearningC#.runtimeconfig.json
+/Users/alexandertorres/Coding/LearningC#/LearningC#/bin/Debug/net8.0/LearningC#.dll
+/Users/alexandertorres/Coding/LearningC#/LearningC#/bin/Debug/net8.0/LearningC#.pdb
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.AssemblyInfoInputs.cache
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.AssemblyInfo.cs
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.csproj.CoreCompileInputs.cache
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.dll
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/refint/LearningC#.dll
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.pdb
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/LearningC#.genruntimeconfig.cache
+/Users/alexandertorres/Coding/LearningC#/LearningC#/obj/Debug/net8.0/ref/LearningC#.dll
