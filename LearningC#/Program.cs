@@ -9,6 +9,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        int testingNum = 56;
 
         //Console.WriteLine("Hello, World!");
 
