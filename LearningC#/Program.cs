@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
+using System.Text;
 
 
 ///////////////////https://www.youtube.com/watch?v=0QUgvfuKvWU
@@ -10,7 +11,9 @@ internal class Program
     private static void Main(string[] args)
     {
         int testingNum = 56;
+        Console.WriteLine(testingNum);
 
+        Console.ReadLine();
         //Console.WriteLine("Hello, World!");
 
         //Variables are buckets in the computer memory
@@ -552,9 +555,194 @@ internal class Program
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //******************************** While Iteration Statement ********************************************
+        //******************************** While Iteration Statement ********************************************
+        //******************************** While Iteration Statement ********************************************
+        //******************************** While Iteration Statement ********************************************
+        //******************************** While Iteration Statement ********************************************
+
+
+        // How many times the code needs to go through. until some condition is met - Use the While
+
+        // DO-WHILE will at least be ran at least one.
+
+
+        //    bool displayMenu = true;
+        //    while (displayMenu)//Checks the condition 
+        //    {
+        //        displayMenu = MainMenu();
+        //    }
+
+        //    MainMenu();
+
+
+        //}
+
+        //private static bool MainMenu()
+        //{
+        //    Console.WriteLine("Choose an option:");
+        //    Console.WriteLine("1) Print Numbers");
+        //    Console.WriteLine("2) Guessing Game");
+        //    Console.WriteLine("3) Exit");
+
+        //    string result = Console.ReadLine();
+
+        //    if (result == "1")
+        //    {
+        //        PrintNumbers();
+        //        return true;
+        //    }
+        //    else if (result == "2")
+        //    {
+        //        GuessingGame();
+        //        return true;
+        //    }
+        //    else if (result == "3")
+        //    {
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return true;
+
+        //    }
+
+        //}
+
+        //private static void PrintNumbers()
+        //{
+        //    Console.Clear();
+        //    Console.WriteLine("Print numbers");
+        //    Console.WriteLine("Type a number: ");
+        //    int result = int.Parse(Console.ReadLine());
+        //    int counter = 1;
+        //    while (counter <= result)
+        //    {
+        //        if (counter == (result))
+        //        {
+        //            Console.Write(counter);
+        //        } else
+        //        {
+        //            Console.Write(counter);
+        //            Console.Write("-");
+        //        }
+        //        counter++;
+
+        //    }
+        //    Console.ReadLine();
+        //}
+
+        //private static void GuessingGame()
+        //{
+        //    Console.Clear();
+        //    Console.WriteLine("Guessing game!");
+        //    Random myRandom = new Random();
+        //    int randomNumber = myRandom.Next(1, 11);
+        //    int guesses = 0;
+        //    bool incorrect = true;
+
+        //    do
+        //    {
+        //        Console.WriteLine("Guess a number between 1 and 10: ");
+        //        string result = Console.ReadLine();
+        //        guesses++;
+        //        if (result == randomNumber.ToString())
+        //            incorrect = false;
+        //        else
+        //            Console.WriteLine("Wrong!");
+        //    } while (incorrect);
+        //    Console.WriteLine("Correct! It took you {0} guesses", guesses);
+        //    Console.ReadLine();
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //******************************** Working with string  ********************************************
+        //******************************** Working with string  ********************************************
+        //******************************** Working with string  ********************************************
+        //******************************** Working with string  ********************************************
+        //******************************** Working with string  ********************************************
+
+
+
+
+        //Changing strings to  create values
+
+        //string myString = "My \"so-called\" life " ;
+        //string myString2 = "What if I need a\nnew line?";
+        //string myString3 = "Go to your C:\\ drive";
+        //string myString4 = @"Go to your c:\= drive";
+
+        //string myString5 = String.Format("{0} = {1}", "First","Second");
+        //string myString6 = String.Format("{0:C}", 123.45);
+        //string myString7 = String.Format("{0:N}", 12345667);
+        //string myString8 = String.Format("{0:P}", .123);
+
+
+        //string myString9 = String.Format("Phone Number: {0:(###) ###-####}", 1234567890);
+        //Console.WriteLine(myString9);
+        //Console.ReadLine();
+
+
+
+        ////change the string its self
+
+        //string myString10 = " That summer we took threes across the board ";
+        ////myString10 = myString.Replace(" ", "--");
+        ////myString10 = myString10.Substring(6);
+        //myString10 = myString.Remove(6);
+        //Console.WriteLine(myString10);
+        //Console.ReadLine();
+
+
+        //StringBuilder myString11 = new StringBuilder();
+
+        //for (int i = 0; i <100; i++)
+        //{
+        //    myString11.Append("--");
+        //    myString11.Append(i);
+
+        //}
+        Console.WriteLine(myString11);
+        Console.ReadLine();
+
+
+        //https://www.youtube.com/watch?v=0QUgvfuKvWU
+        //3:54:22
     }
-
-
-
-
 }
