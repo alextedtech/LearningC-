@@ -738,11 +738,181 @@ internal class Program
         //    myString11.Append(i);
 
         //}
-        Console.WriteLine(myString11);
+        //Console.WriteLine(myString11);
+        //Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //******************************** Working with strings ********************************************
+        //******************************** Working with strings ********************************************
+        //******************************** Working with strings ********************************************
+        //******************************** Working with strings ********************************************
+        //******************************** Working with strings ********************************************
+
+
+
+        //DateTime myValue = DateTime.Now;
+        //Console.WriteLine(myValue.ToString());//Will take the country and location and present dates in times as they are presented in our date and our culture.
+        //Console.WriteLine(myValue.ToShortDateString());
+        //Console.WriteLine(myValue.ToShortTimeString());
+        //Console.WriteLine(myValue.ToLongDateString());
+        //Console.WriteLine(myValue.ToLongTimeString());
+        //Console.WriteLine(myValue.AddDays(3).ToLongDateString());
+        //Console.WriteLine(myValue.AddHours(3).ToLongTimeString());
+        //Console.WriteLine(myValue.AddDays(-3).ToLongDateString());
+
+        //DateTime myBirthday = new DateTime(1993, 12, 7);
+        //Console.WriteLine("This is my birthday "+ myBirthday);
+
+
+        //TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+        //Console.WriteLine(myAge);
+        //Console.ReadLine ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //******************************** UNDERSTANDING CLASSES ********************************************
+        //******************************** UNDERSTANDING CLASSES ********************************************
+        //******************************** UNDERSTANDING CLASSES ********************************************
+        //******************************** UNDERSTANDING CLASSES ********************************************
+        //******************************** UNDERSTANDING CLASSES ********************************************
+
+
+
+
+        //Object orientated programming
+        // Calling methods that are inside classes.
+        // 
+
+
+
+        //Creating application for selling cars
+        //need to create number of variables to hold information 
+        //use the information base on make, models.
+
+
+
+        //This is not the right approach becuase you will have multiple cars that will have thier own things. 
+
+        //string car1Make;
+        //string car1Model;
+        //int car1Year;
+        //string car1Color;
+
+
+        //Define 4 properties. 
+
+
+        //Declaring the class
+
+
+        // Car is calling the class car
+        // myCar is setting the name that will be used in the main class when calling it. 
+        // new is creating a new instance of that class. Put this up in the memory
+        // Car() this creating the new instance of the car. So basiaclly taking all the information
+        // so the main class can use it (or any class that would like to call it)
+        Car myCar = new Car();
+        myCar.Make = "oldsmobile";
+        myCar.Model = "Cutlas Supreme";
+        myCar.Year = 1986;
+        myCar.Color = "Silver";
+        //you set the new instance of the Car class then assigned the variables in your 
+        //Car class and assigned them in the Main class.
+
+        Console.WriteLine("{0} {1} {2} {3}", 
+            myCar.Year, 
+            myCar.Make, 
+            myCar.Model, 
+            myCar.Color);
         Console.ReadLine();
 
 
-        //https://www.youtube.com/watch?v=0QUgvfuKvWU
-        //3:54:22
+        //decimal value = DetermineMarketValue(myCar);
+        //Console.WriteLine("{0:C}", value);
+
+        Console.WriteLine("{0:C",myCar.DetermineMarketValue());
+        Console.ReadLine();
+
+
+
+       
+    }
+
+    private static decimal DetermineMarketValue (Car car)//We are setting up a method that will have the Class car as the parameters being entered. 
+    //the car is the variable name
+    {
+        decimal carValue = 100.00m;
+
+        //Someday I might look up the car 
+        //online using a webservice to get accurate value.
+        return carValue;
+    }
+
+}
+
+//define a new class
+//Create a bucket that will hold information that will hold any given car in the lot. 
+//All the values should be in the bucket "class" 
+//This is defining the class itself - this is the definition. 
+
+//Object will create based on having the class in this case the Car class.  
+class Car
+{
+    public string Make { get; set; } //declaring a property
+    public string Model { get; set; }//declaring a property
+    public int Year { get; set; }//declaring a property
+    public string Color { get; set; }//declaring a property
+
+    public decimal DetermineMarketValue()
+    {
+        decimal carValue;
+        if (Year > 1990)
+        {
+            carValue = 10000;
+        }
+        else
+        {
+            carValue = 2000;
+
+        }
+
+        return carValue;
     }
 }
+
+
