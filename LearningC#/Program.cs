@@ -846,42 +846,79 @@ internal class Program
         // new is creating a new instance of that class. Put this up in the memory
         // Car() this creating the new instance of the car. So basiaclly taking all the information
         // so the main class can use it (or any class that would like to call it)
-        Car myCar = new Car();
-        myCar.Make = "oldsmobile";
-        myCar.Model = "Cutlas Supreme";
-        myCar.Year = 1986;
-        myCar.Color = "Silver";
-        //you set the new instance of the Car class then assigned the variables in your 
-        //Car class and assigned them in the Main class.
+        // Car myCar = new Car();
+        // myCar.Make = "oldsmobile";
+        // myCar.Model = "Cutlas Supreme";
+        // myCar.Year = 1986;
+        // myCar.Color = "Silver";
+        // //you set the new instance of the Car class then assigned the variables in your 
+        // //Car class and assigned them in the Main class.
 
-        Console.WriteLine("{0} {1} {2} {3}", 
-            myCar.Year, 
-            myCar.Make, 
-            myCar.Model, 
-            myCar.Color);
-        Console.ReadLine();
+        // Console.WriteLine("{0} {1} {2} {3}", 
+        //     myCar.Year, 
+        //     myCar.Make, 
+        //     myCar.Model, 
+        //     myCar.Color);
+        // Console.ReadLine();
 
 
-        //decimal value = DetermineMarketValue(myCar);
-        //Console.WriteLine("{0:C}", value);
+        // //decimal value = DetermineMarketValue(myCar);
+        // //Console.WriteLine("{0:C}", value);
 
-        Console.WriteLine("{0:C",myCar.DetermineMarketValue());
-        Console.ReadLine();
+        // Console.WriteLine("{0:C",myCar.DetermineMarketValue());
+        // Console.ReadLine();
+
+
+    Car myCar = new Car(); //This is creating a new instance of a Car class. 
+
+    //.net framework is job to look for an memory address and create the instance and copy 
+    //Serves the object back to us. It stored in the variable we set in myCar.
+    //myCar is a reference to an instance of in computer memory. 
+    //.net framework run time gives you the illusion that you are directly working on the class but its just an instance.
+
+
+    //Storing values in the bucket and holding on to the bucket by using the reference
+    //If we let go of the bucket then it is lost in the memory
+    //.net framework run time, constanlty garbage managing. 
+
+    myCar.Make = "Oldmobile";
+    myCar.Model = "Culta Supreme";
+    myCar.Year = 1945;
+    myCar.Color = "Silver";
+
+    Car myOtherCar ;
+    myOtherCar = myCar;
+    // 
+
+
+    System.Console.WriteLine("{0} {1} {2} {3}",
+    myOtherCar.Make, myOtherCar.Model, 
+    myOtherCar.Year, myOtherCar.Color);
+
+    myOtherCar.Model = "98";
+
+    System.Console.WriteLine("{}{}{}{}",
+    );
+
+    
 
 
 
        
     }
 
-    private static decimal DetermineMarketValue (Car car)//We are setting up a method that will have the Class car as the parameters being entered. 
-    //the car is the variable name
-    {
-        decimal carValue = 100.00m;
 
-        //Someday I might look up the car 
-        //online using a webservice to get accurate value.
-        return carValue;
-    }
+
+
+    //private static decimal DetermineMarketValue (Car car)//We are setting up a method that will have the Class car as the parameters being entered. 
+    //the car is the variable name
+    // {
+    //     decimal carValue = 100.00m;
+
+    //     //Someday I might look up the car 
+    //     //online using a webservice to get accurate value.
+    //     return carValue;
+    // }
 
 }
 
@@ -898,21 +935,21 @@ class Car
     public int Year { get; set; }//declaring a property
     public string Color { get; set; }//declaring a property
 
-    public decimal DetermineMarketValue()
-    {
-        decimal carValue;
-        if (Year > 1990)
-        {
-            carValue = 10000;
-        }
-        else
-        {
-            carValue = 2000;
+    // public decimal DetermineMarketValue()
+    // {
+    //     decimal carValue;
+    //     if (Year > 1990)
+    //     {
+    //         carValue = 10000;
+    //     }
+    //     else
+    //     {
+    //         carValue = 2000;
 
-        }
+    //     }
 
-        return carValue;
-    }
+    //     return carValue;
+    //}
 }
 
 
